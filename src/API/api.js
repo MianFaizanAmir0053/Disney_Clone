@@ -1,0 +1,2 @@
+const api = 'https://api.themoviedb.org/3/discover/movie?api_key=44ca6748d561037c21b26e7e1d17ec3e&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate'
+export default api
