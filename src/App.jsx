@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import api from "./API/api";
+// import React, { createContext, useContext, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import api from "./API/api";
 import "./App.css";
 import Crousal from "./components/Crousal";
 import Home from "./components/Home";
@@ -8,7 +8,7 @@ import Login from "./components/Login";
 import Overview from "./components/Overview";
 
 function App() {
-  const apiContext = createContext();
+  // const apiContext = createContext();
 
   return (
     <BrowserRouter>
