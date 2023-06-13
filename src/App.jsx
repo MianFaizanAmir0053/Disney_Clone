@@ -1,5 +1,5 @@
 // import React, { createContext, useContext, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import api from "./API/api";
 import "./App.css";
 import Crousal from "./components/Crousal";
