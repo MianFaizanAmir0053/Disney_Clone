@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import Header from "./Header";
 import { NavLink } from "react-router-dom";
+
 const Login = () => {
   return (
     <Container>
-      <Header overview={false}></Header>
+      <Header overview={true}></Header>
       <Content>
         <div>
-          <img src="src/assets/images/cta-logo-one.svg" alt="" />
+          <img src="cta-logo-one.svg" alt="" />
         </div>
         <div>
           <Button>
@@ -21,7 +22,7 @@ const Login = () => {
           The Disney Bundle will increase by $1.
         </p>
         <div>
-          <img src="src/assets/images/cta-logo-two.png" alt="" />
+          <img src="cta-logo-two.png" alt="" />
         </div>
       </Content>
     </Container>
@@ -31,7 +32,7 @@ const Login = () => {
 export default Login;
 
 const Container = styled.div`
-  background-image: url("src/assets/images/login-background.jpg");
+  background-image: url("login-background.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;

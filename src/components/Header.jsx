@@ -1,87 +1,39 @@
-// import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-// import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-
 const Header = ({ overview }) => {
-  // const handleAuth = () => {
-  //   auth.signInWithPopup(provider).catch((error) => {
-  //     alert(error.message);
-  //   });
-  // };
-  // const navigate = useNavigate();
-  // const handleAuth = () => {
-  //   if (user) {
-  //     auth.signOut();
-  //   }
-  // };
-  // const [user, setUser] = useState(null);
-  // auth.onAuthStateChanged((authUser) => {
-  //   if (authUser) {
-  //     // user has logged in
-  //     setUser(authUser);
-  //   } else {
-  //     // user has logged out
-  //     setUser(null);
-  //   }
-  // });
-
-  // const auth = getAuth();
-  // signInWithPopup(auth, provider)
-  //   .then((result) => {
-  //     // This gives you a Google Access Token. You can use it to access the Google API.
-  //     const credential = GoogleAuthProvider.credentialFromResult(result);
-  //     const token = credential.accessToken;
-  //     // The signed-in user info.
-  //     const user = result.user;
-  //     console.log(result.user);
-  //     // IdP data available using getAdditionalUserInfo(result)
-  //     // ...
-  //   })
-  //   .catch((error) => {
-  //     // Handle Errors here.
-  //     const errorCode = error.code;
-  //     const errorMessage = error.message;
-  //     // The email of the user's account used.
-  //     const email = error.customData.email;
-  //     // The AuthCredential type that was used.
-  //     const credential = GoogleAuthProvider.credentialFromError(error);
-  //     // ...
-  //   });
-
   return (
     <Wrapper background={overview}>
       <nav>
-        <img src="src/assets/images/logo.svg" alt="" />
+        <img src="logo.svg" alt="" />
         <span>
-          <img src="src/assets/images/home-icon.svg" alt="" />
-          <a href="">Home</a>
+          <img src="home-icon.svg" alt="" />
+          <NavLink to={"/home"}>Home</NavLink>
         </span>
         <span>
-          <img src="src/assets/images/search-icon.svg" alt="" />
-          <a href="">Search</a>
+          <img src="search-icon.svg" alt="" />
+          <NavLink to={"/home"}>Search</NavLink>
         </span>
         <span>
-          <img src="src/assets/images/watchlist-icon.svg" alt="" />
-          <a href="">Watch List</a>
+          <img src="watchlist-icon.svg" alt="" />
+          <NavLink to={"/home"}>Watch List</NavLink>
         </span>
         <span>
-          <img src="src/assets/images/original-icon.svg" alt="" />
-          <a href="">Originals</a>
+          <img src="original-icon.svg" alt="" />
+          <NavLink to={"/home"}>Originals</NavLink>
         </span>
         <span>
-          <img src="src/assets/images/movie-icon.svg" alt="" />
-          <a href="">Movies</a>
+          <img src="movie-icon.svg" alt="" />
+          <NavLink to={"/home"}>Movies</NavLink>
         </span>
         <span>
-          <img src="src/assets/images/series-icon.svg" alt="" />
-          <a href="">Series</a>
+          <img src="series-icon.svg" alt="" />
+          <NavLink to={"/home"}>Series</NavLink>
         </span>
       </nav>
 
       <div>
-        <a href="home">Login</a>
+        <NavLink to={"/home"}>Login</NavLink>
       </div>
     </Wrapper>
   );
@@ -97,7 +49,7 @@ const Wrapper = styled.div`
   z-index: 100;
 
   display: flex;
-  background-color: ${(props) => (!props.background ? "black" : "transparent")};
+  background-color: ${(props) => (props.background ? "black" : "trasnparent")};
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;

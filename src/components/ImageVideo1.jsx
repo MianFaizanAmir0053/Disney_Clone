@@ -1,49 +1,34 @@
 import styled from "styled-components";
 
-const ImageVideo = () => {
+const ImageVideo1 = () => {
   return (
     <Wrapper>
       <div className="pos">
-        <video
-          src="/src/assets/videos/1564674844-disney.mp4"
-          autoPlay
-          loop
-          playsInline
-        ></video>
-        <img src="/src/assets/images/viewers-disney.png" alt="" />
+        <video src="1564674844-disney.mp4" autoPlay loop playsInline></video>
+        <img src="viewers-disney.png" alt="" />
+      </div>
+      <div className="pos">
+        <video src="1564676115-marvel.mp4" autoPlay loop playsInline></video>
+        <img src="viewers-marvel.png" alt="" />
+      </div>
+      <div className="pos">
+        <video src="1608229455-star-wars.mp4" autoPlay loop playsInline></video>
+        <img src="viewers-starwars.png" alt="" />
       </div>
       <div className="pos">
         <video
-          src="/src/assets/videos/1564676115-marvel.mp4"
+          src="1564676296-national-geographic.mp4"
           autoPlay
           loop
           playsInline
         ></video>
-        <img src="/src/assets/images/viewers-marvel.png" alt="" />
-      </div>
-      <div className="pos">
-        <video
-          src="/src/assets/videos/1608229455-star-wars.mp4"
-          autoPlay
-          loop
-          playsInline
-        ></video>
-        <img src="/src/assets/images/viewers-starwars.png" alt="" />
-      </div>
-      <div className="pos">
-        <video
-          src="/src/assets/videos/1564676296-national-geographic.mp4"
-          autoPlay
-          loop
-          playsInline
-        ></video>
-        <img src="/src/assets/images/viewers-national.png" alt="" />
+        <img src="viewers-national.png" alt="" />
       </div>
     </Wrapper>
   );
 };
 
-export default ImageVideo;
+export default ImageVideo1;
 
 const Wrapper = styled.div`
   div {

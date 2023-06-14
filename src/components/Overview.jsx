@@ -66,23 +66,23 @@ const Overview = () => {
           <div className="overviewBtns">
             <div className="btn">
               <span>
-                <img src="/src/assets/images/play-icon-black.png" alt="" />
+                <img src="/play-icon-white.png" alt="" />
                 <a href="#">watch now</a>
               </span>
               <span>
-                <img src="/src/assets/images/play-icon-white.png" alt="" />
+                <img src="/play-icon-white.png" alt="" />
                 <a href="#">trailer</a>
               </span>
             </div>
             <div>
-              <div className="twoIcons">
+              {/* <div className="twoIcons">
                 <div>
-                  <img src="/src/assets/images/play-icon-white.png" alt="" />
+                  <img src="/play-icon-white.png" alt="" />
                 </div>
                 <div>
-                  <img src="/src/assets/images/play-icon-white.png" alt="" />
+                  <img src="/play-icon-white.png" alt="" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <p className="movieOverview">{movie.overview}</p>
