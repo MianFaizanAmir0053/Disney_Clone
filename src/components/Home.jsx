@@ -42,7 +42,7 @@ const Home = () => {
         <Slider />
       </SliderStyle>
       <BaseWrapper>
-        <Header />
+        <Header overview={true} />
         <ImageVideo1 />
         <div className="animate">
           <h2>trending</h2>
